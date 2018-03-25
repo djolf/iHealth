@@ -1,0 +1,46 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.row {
+    width: auto;
+}
+
+.flex-item {
+    padding: 5px;
+}
+
+.submitBtn {
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: rgb(0, 129, 234);
+    border-width: 1px;
+    box-shadow: none;
+    display: inline-block;
+    padding: 6px 12px;
+    vertical-align: middle;
+    color: white;
+    outline: none;
+}
+
+.submitBtn:hover,
+.submitBtn:active {
+    background: rgb(0, 71, 126);
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start
+}
+
+.btn-container .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    width: 100px;
+}

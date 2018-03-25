@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <link href="./iHealth App_files/icon" rel="stylesheet">
+
+    <title>iHealth App</title>
+<style type="text/css">body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgray;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: 100vh;
+}
+
+#root {
+    width: 500px;
+    height: 400px;
+}</style><style type="text/css">.btn {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: none;
+    border-width: 1px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: inline-block;
+    padding: 6px 12px;
+    vertical-align: middle;
+    border-color: gray;
+    color: gray;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+
+.active {
+    border-color: rgb(0, 129, 234);
+    color: rgb(0, 129, 234);
+}
+
+.first {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    min-height: 60px;
+    min-width: 120px;
+}
+
+.second {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    min-height: 60px;
+    min-width: 120px;
+}</style><style type="text/css">.frequency-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+input {
+    height: 40px;
+    width: 60px;
+    outline: none;
+    border: 0;
+    background: none;
+    border-width: 1px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: inline-block;
+    vertical-align: middle;
+    border-color: gray;
+    color: gray;
+}
+
+.num-input {
+    width: 100%;
+    text-align: center;
+}
+
+.ctn {
+    width: 150px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ctn:hover,
+.ctn:focus {
+    border-color: rgb(0, 129, 234)
+}
+
+.btn-holder:hover,
+.btn-holder:focus {
+    border-color: rgb(0, 129, 234)
+}
+
+.input-btn {
+    width: 100%;
+    height: 50%;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-left: 1px solid grey;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    outline: none;
+}
+
+.up {
+    border-bottom: 1px solid grey;
+}
+
+.timesLabel {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.select {
+    height: 50px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.select:hover,
+.select:focus {
+    border-color: rgb(0, 129, 234)
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}</style><style type="text/css">.App {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+}
+
+.row {
+    width: auto;
+}
+
+.flex-item {
+    padding: 5px;
+}
+
+.submitBtn {
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: rgb(0, 129, 234);
+    border-width: 1px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: inline-block;
+    padding: 6px 12px;
+    vertical-align: middle;
+    color: white;
+    outline: none;
+}
+
+.btn-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start
+}
+
+.btn-container .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    width: 100px;
+}</style></head>
+
+<body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div class="App"><div class="row"><label class="flex-item">Select Patient Self-Monitoring Schedule*</label><div class="buttons flex-item"><button type="button" class="btn first">By Time Slot</button><button type="button" class="btn second active">By Frequency</button></div><form id="formContainer" class="flex-item"><div class="frequency-container"><div class="ctn"><input type="number" min="1" class="num-input" value="2"><div class="btn-holder"><button type="button" class="input-btn up"><i class="material-icons" style="
+    font-size: 20;
+">keyboard_arrow_up</i></button><button type="button" class="input-btn"><i class="material-icons" style="
+    font-size: 20px;
+">keyboard_arrow_down</i></button></div></div><label class="timesLabel"> times a </label><select class="select"><option value="day">Day(s)</option><option value="week">Week(s)</option><option value="month">Month(s)</option></select></div><button type="submit" class="flex-item submitBtn">Save</button></form></div></div></div>
+
+<script type="text/javascript" src="./iHealth App_files/bundle.js.download"></script>
+
+</body></html>

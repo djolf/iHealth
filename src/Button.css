@@ -1,0 +1,36 @@
+.btn {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: none;
+    border-width: 1px;
+    box-shadow: none;
+    display: inline-block;
+    padding: 6px 12px;
+    vertical-align: middle;
+    border-color: gray;
+    color: gray;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+
+.active {
+    border-color: rgb(0, 129, 234);
+    color: rgb(0, 129, 234);
+}
+
+.first {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    min-height: 60px;
+    min-width: 120px;
+}
+
+.second {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    min-height: 60px;
+    min-width: 120px;
+}
